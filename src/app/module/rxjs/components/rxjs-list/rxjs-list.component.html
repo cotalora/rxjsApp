@@ -1,0 +1,9 @@
+<div class="list-container" [@collapse]="rxjsList.length === 0 && !thereAreNoElements">
+    <ul *ngIf="rxjsList.length > 0">
+        <li *ngFor="let rxjsItem of rxjsList">
+            {{ rxjsItem.name }}
+        </li>
+    </ul>
+
+    <h6 *ngIf="thereAreNoElements" class="no-results-text">There are no results...</h6>
+</div>

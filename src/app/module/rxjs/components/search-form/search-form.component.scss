@@ -1,0 +1,67 @@
+.input-container {
+    border-radius: 1rem;
+    border: .05rem solid rgba(165, 165, 165, 0.75);
+    background: #191D23;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 1em;
+    transition: all .3s;
+    width: 100%;
+
+    &:hover, &:has(input:focus) {
+        border-color: rgba(165, 165, 165, 1);
+    }
+
+    .search-icon {
+        --lord-icon-primary: rgba(165, 165, 165, 1);
+        width: 1.5rem;
+    }
+
+    input {
+        padding: 1.25em 1.12em 1.25em 1em;
+        outline: none;;
+        color: #FFFFFF;
+        font-size: .875rem;
+        font-weight: 400;
+        background: transparent;
+        border: none;
+        width: 100%;
+    }
+
+    .key-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+        margin-right: 1em;
+        text-wrap: nowrap;
+
+        .key-background {
+            border-bottom: 0.05rem solid rgba(165, 165, 165, 0.75);
+            border-right: 0.05rem solid rgba(165, 165, 165, 0.75);
+            border-left: 0.05rem solid rgba(165, 165, 165, 0.75);
+            border-radius: 0.75rem;
+            padding-bottom: 0.25rem;
+
+            .key {
+                display: flex;
+                width: fit-content;
+                padding: .5em .875em;
+                border-radius: .75rem;
+                border: .05rem solid rgba(165, 165, 165, 0.75);
+                border-left: none;
+                border-right: none;
+                color: rgba(165, 165, 165, 0.75);
+                font-size: .65rem;
+                font-weight: 400;
+            }
+        }
+
+        span {
+            color: #FFFFFF;
+            font-size: .75rem;
+            font-weight: 400;
+        }
+    }
+}

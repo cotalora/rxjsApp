@@ -1,0 +1,38 @@
+.list-container {
+    background: white;
+    margin-top: -0.75rem;
+    padding-top: 0.75em;
+    border-bottom: 0.05rem solid rgba(165, 165, 165, 0.75);
+    border-right: 0.05rem solid rgba(165, 165, 165, 0.75);
+    border-left: 0.05rem solid rgba(165, 165, 165, 0.75);
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    background: #191D23;
+
+    ul {
+        list-style: none;
+        border-top: 1px solid rgba(165, 165, 165, 0.75);
+        margin: 0;
+        padding: 1em 0;
+
+        li {
+            color: #FFFFFF;
+            padding: 0.75em 1em;
+
+            &:hover {
+                background: rgba(255, 255, 255, 0.25);
+                cursor: pointer;
+            }
+        }
+    }
+
+    .no-results-text {
+        border-top: 1px solid rgba(165, 165, 165, 0.75);
+        font-size: 1rem;
+        font-weight: 500;
+        color: #FFFFFF;
+        margin: 0em 0em 1em 0em;
+        padding-top: 1em;
+        text-align: center;
+    }
+}

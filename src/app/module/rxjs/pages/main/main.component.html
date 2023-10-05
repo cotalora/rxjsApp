@@ -1,0 +1,6 @@
+<div class="main-container">
+    <div @fade class="input-list-container">
+        <main-search-form (searchValue)="onSearchValue($event)" />
+        <main-rxjs-list [searchValue]="searchValue" />
+    </div>
+</div>
